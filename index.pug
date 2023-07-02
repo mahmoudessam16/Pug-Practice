@@ -1,18 +1,77 @@
 doctype 
-html 
+html(lang="en")
   head
-    link(href="./main.css" rel="stylesheet")
-    title Practise
+    meta(charset="UTF-8")
+    title Portfolio
+    include includes/styles.pug
   body
     div.header
-      h1.logo Agency
-      ul
-        li Home
-        li About
-        li Services
-        li Skills
-        li Contact Me
-    div.landing 
+      .container
+        h1.logo Mahmoud
+        ul#links
+          li 
+            a(href="#home") Home
+          li 
+            a(href="#about") About
+          li 
+            a(href="#services") Services
+          li 
+            a(href="#skills") Skills
+          li 
+            a(href="#contact") Contact Me
+        .icon
+          i(class="fa fa-bars fa-2x" aria-hidden="true")
+      .toggle-mobile.show
+        ul#links
+          li 
+            a(href="#home") Home
+          li 
+            a(href="#about") About
+          li 
+            a(href="#services") Services
+          li 
+            a(href="#skills") Skills
+          li 
+            a(href="#contact") Contact Me
+          i(class="fa fa-window-close" aria-hidden="true")
+
+    div.landing#home
       div.text
-        h2 This is our agency 
-        p We Manage all projects by creative methods and Critical Solutions
+        h2 This is My Portfolio
+        p Mahmoud Essam, a proficient Frontend Developer with a passion for creating visually engaging and user-friendly websites using modern technologies.
+
+    .about#about
+      .container
+        .image
+          img(src="./images/My-image.jpeg" alt="my-image")
+        .info
+          h2 Frontend Developer
+          p Hello everyone, I'd like to introduce a highly skilled professional in our midst. This is Mahmoud Essam, a dedicated Frontend Developer. With a strong background in various programming languages such as HTML, CSS, and JavaScript, Mahmoud has a knack for creating visually appealing, user-friendly websites. Their expertise in responsive design and a deep understanding of user experience make them a valuable asset in any web development project. Always staying updated with the latest trends in web development, [Your Name] is truly passionate about their craft and is always ready to take on new challenges in the field.
+
+    .services#services
+      .container
+        h2 Services Offered
+        .content 
+          .box
+            h3 HTML/CSS Development
+            p Frontend developers write HTML and CSS code to structure and style web pages. I ensure that the website is responsive, accessible, and compatible across different browsers and devices.
+          .box 
+            h3 JavaScript Development
+            p Frontend developers use JavaScript to add interactivity and dynamic functionality to web pages. They may work with frameworks like React, Angular, or Vue.js to build complex user interfaces and enhance user experience.
+          .box 
+            h3 Cross-Browser and Device Testing
+            p Frontend developers test websites and applications on various browsers and devices to ensure consistent performance and functionality across different platforms.
+
+    .skills 
+      .container 
+        h2 Skills
+        .my-skills  
+          .skill 
+            img(href="./images/sass-logo.png" alt="html")
+            h4 HTML
+          .skill 
+            img(href="./images/My-image.jpeg" alt="css")
+            h4 CSS
+
+
+    script(src="./main.js")

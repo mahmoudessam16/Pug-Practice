@@ -1,25 +1,80 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
     <link href="./main.css" rel="stylesheet">
-    <title>Practise</title>
   </head>
   <body>
     <div class="header">
-      <h1 class="logo">Agency</h1>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Skills</li>
-        <li>Contact Me</li>
-      </ul>
-    </div>
-    <div class="landing"> 
-      <div class="text">
-        <h2>This is our agency </h2>
-        <p>We Manage all projects by creative methods and Critical Solutions</p>
+      <div class="container">
+        <h1 class="logo">Mahmoud</h1>
+        <ul id="links">
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#services">Services</a></li>
+          <li> <a href="#skills">Skills</a></li>
+          <li> <a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <div class="toggle-mobile show">
+        <ul id="links">
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#services">Services</a></li>
+          <li> <a href="#skills">Skills</a></li>
+          <li> <a href="#contact">Contact Me</a></li><i class="fa fa-window-close" aria-hidden="true"></i>
+        </ul>
       </div>
     </div>
+    <div class="landing" id="home">
+      <div class="text">
+        <h2>This is My Portfolio</h2>
+        <p>Mahmoud Essam, a proficient Frontend Developer with a passion for creating visually engaging and user-friendly websites using modern technologies.</p>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="container">
+        <div class="image"><img src="./images/My-image.jpeg" alt="my-image"></div>
+        <div class="info">
+          <h2>Frontend Developer</h2>
+          <p>Hello everyone, I'd like to introduce a highly skilled professional in our midst. This is Mahmoud Essam, a dedicated Frontend Developer. With a strong background in various programming languages such as HTML, CSS, and JavaScript, Mahmoud has a knack for creating visually appealing, user-friendly websites. Their expertise in responsive design and a deep understanding of user experience make them a valuable asset in any web development project. Always staying updated with the latest trends in web development, [Your Name] is truly passionate about their craft and is always ready to take on new challenges in the field.</p>
+        </div>
+      </div>
+    </div>
+    <div class="services" id="services">
+      <div class="container">
+        <h2>Services Offered</h2>
+        <div class="content"> 
+          <div class="box">
+            <h3>HTML/CSS Development</h3>
+            <p>Frontend developers write HTML and CSS code to structure and style web pages. I ensure that the website is responsive, accessible, and compatible across different browsers and devices.</p>
+          </div>
+          <div class="box"> 
+            <h3>JavaScript Development</h3>
+            <p>Frontend developers use JavaScript to add interactivity and dynamic functionality to web pages. They may work with frameworks like React, Angular, or Vue.js to build complex user interfaces and enhance user experience.</p>
+          </div>
+          <div class="box"> 
+            <h3>Cross-Browser and Device Testing</h3>
+            <p>Frontend developers test websites and applications on various browsers and devices to ensure consistent performance and functionality across different platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills"> 
+      <div class="container"> 
+        <h2>Skills</h2>
+        <div class="my-skills"> 
+          <div class="skill"> <img href="./images/sass-logo.png" alt="html">
+            <h4>HTML</h4>
+          </div>
+          <div class="skill"> <img href="./images/My-image.jpeg" alt="css">
+            <h4>CSS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
